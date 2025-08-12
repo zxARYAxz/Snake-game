@@ -8,11 +8,25 @@
 </head>
 <body>
   <div id="game-container">
-    <div id="timer">Time: 0s</div>
+    <div id="stats">
+      <div id="timer">Time: 0s</div>
+      <div id="score">Length: 1</div>
+    </div>
     <div id="game-board"></div>
     <div id="controls">
       <button id="start-button">Start</button>
+      <button id="restart-button" style="display: none;">Restart</button>
     </div>
+  </div>
+  
+  <div id="game-over">
+    <h2>Game Over!</h2>
+    <div id="final-stats">
+      <div id="final-time">Time: 0s</div>
+      <div id="final-length">Length: 1</div>
+    </div>
+    <button id="restart-game">Play Again</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
